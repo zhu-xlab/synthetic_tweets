@@ -28,5 +28,23 @@ Each entry in the CSV file dataset corresponds to a building and includes:
 }
 
 
+```shell script
+echo "hello"
+```
 
-<pre lang="markdown"> ```bash synthetic_bfc_dataset/ ├── data/ │ ├── synthetic_bfc.json │ ├── building_metadata.csv │ └── readme_example.json ├── scripts/ │ ├── generate_prompts.py │ └── postprocess_outputs.py ├── results/ │ └── model_evaluation_summary.md └── README.md ``` </pre>
+## 🔗 Resources
+ - 📜 Project Paper (Preprint) [Project Paper (Preprint)]()
+ - 🤗 LLM Used: LLaMA-3.3-70B-Instruct (bnb-4bit) [LLM Used: LLaMA-3.3-70B-Instruct (bnb-4bit)](https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-bnb-4bit)
+
+
+## 📄 Citation
+
+If you use this dataset in your work, please cite it as:
+
+```bibtex
+@misc{syntheticBFC2025,
+  author       = {Shanshan Bai, Anna Kruspe, Xiaoxiang Zhu},
+  title        = {Generating Synthetic Oracle Datasets to Analyze Noise Impact: A Study on Building Function Classification Using Tweets},
+  year         = {2025}
+}
+```
