@@ -29,4 +29,4 @@ Each entry in the CSV file dataset corresponds to a building and includes:
 
 
 
-synthetic_bfc_dataset/ ├── data/ │ ├── synthetic_bfc.json │ ├── building_metadata.csv │ └── readme_example.json ├── scripts/ │ ├── generate_prompts.py │ └── postprocess_outputs.py ├── results/ │ └── model_evaluation_summary.md └── README.md
+<pre lang="markdown"> ```bash synthetic_bfc_dataset/ ├── data/ │ ├── synthetic_bfc.json │ ├── building_metadata.csv │ └── readme_example.json ├── scripts/ │ ├── generate_prompts.py │ └── postprocess_outputs.py ├── results/ │ └── model_evaluation_summary.md └── README.md ``` </pre>
