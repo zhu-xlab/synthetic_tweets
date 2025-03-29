@@ -26,3 +26,7 @@ Each entry in the CSV file dataset corresponds to a building and includes:
     "Merlex Auto Group really knows how to treat car lovers right. The staff? Super knowledgeable."
   ]
 }
+
+
+
+synthetic_bfc_dataset/ ├── data/ │ ├── synthetic_bfc.json │ ├── building_metadata.csv │ └── readme_example.json ├── scripts/ │ ├── generate_prompts.py │ └── postprocess_outputs.py ├── results/ │ └── model_evaluation_summary.md └── README.md
