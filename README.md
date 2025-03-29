@@ -26,15 +26,34 @@ Each entry in the CSV file dataset corresponds to a building and includes:
     "Merlex Auto Group really knows how to treat car lovers right. The staff? Super knowledgeable."
   ]
 }
+```
+
 
 
 ```shell script
-echo "hello"
+/synthetic_tweets/
+│
+├── data/       
+│   ├── metadata.jsonl                  # Metadata used for tweet generation
+│   └── tweets.csv                      # Sample entry with explanation
+│
+├── code/
+│   └── tweets_generation.ipynb         # Code for tweets generation
+│
+└── README.md   
 ```
+
+
+
+
 
 ## 🔗 Resources
  - 📜 Project Paper (Preprint) [Project Paper (Preprint)]()
  - 🤗 LLM Used: LLaMA-3.3-70B-Instruct (bnb-4bit) [LLM Used: LLaMA-3.3-70B-Instruct (bnb-4bit)](https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-bnb-4bit)
+
+
+
+
 
 
 ## 📄 Citation
