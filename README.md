@@ -48,22 +48,7 @@ Each entry in the CSV file dataset corresponds to a building and includes:
 
 
 ## 🔗 Resources
- - 📜 Project Paper (Preprint) [Project Paper (Preprint)]()
+ - 📜 Project Paper (Preprint) [Project Paper (Preprint)](http://arxiv.org/abs/2503.22856)
  - 🤗 LLM Used: LLaMA-3.3-70B-Instruct (bnb-4bit) [LLM Used: LLaMA-3.3-70B-Instruct (bnb-4bit)](https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-bnb-4bit)
 
 
-
-
-
-
-## 📄 Citation
-
-If you use this dataset in your work, please cite it as:
-
-```bibtex
-@misc{syntheticBFC2025,
-  author       = {Shanshan Bai, Anna Kruspe, Xiaoxiang Zhu},
-  title        = {Generating Synthetic Oracle Datasets to Analyze Noise Impact: A Study on Building Function Classification Using Tweets},
-  year         = {2025}
-}
-```
