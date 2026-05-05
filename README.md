@@ -35,13 +35,59 @@ Each entry in the CSV file dataset corresponds to a building and includes:
 │
 ├── data/       
 │   ├── metadata.jsonl                  # Metadata used for tweet generation
-│   └── tweets.csv                      # Sample entry with explanation
+│   └── synthetic_tweets.csv            # Public synthetic tweet dataset
 │
 ├── code/
-│   └── tweets_generation.ipynb         # Code for tweets generation
+│   ├── tweets_generation.ipynb         # Code for tweets generation
+│   ├── run_all_models.py               # Run all MIL/SIL baselines
+│   ├── MIL_Attention.py
+│   ├── MIL_DeepSets.py
+│   ├── MIL_Max.py
+│   ├── MIL_Mean.py
+│   ├── SIL_MajorityVote.py
+│   └── SIL_ProbabilityAverage.py
 │
 └── README.md   
 ```
+
+## 🚀 Runnable MIL/SIL Baselines
+
+This repository also includes training code for six building function
+classification baselines under `code/`:
+
+- MIL-Max
+- MIL-Mean
+- MIL-Attention
+- MIL-DeepSets
+- SIL with majority vote
+- SIL with probability averaging
+
+Run all models on the bundled synthetic dataset with a lightweight mock encoder:
+
+```bash
+python code/run_all_models.py --epochs 1 --max-buildings 40 --device cpu
+```
+
+Run a single model:
+
+```bash
+python code/MIL_Attention.py --epochs 2 --max-buildings 80 --device cpu
+```
+
+The default mock encoder is intended for smoke tests and reproducibility checks.
+To use a Hugging Face encoder:
+
+```bash
+python code/MIL_Max.py \
+  --encoder bert \
+  --pretrained-model google-bert/bert-base-multilingual-cased \
+  --epochs 1
+```
+
+Metrics are written to `outputs/<MODEL_NAME>/metrics.json`.
+
+Note: the runnable baselines use `data/synthetic_tweets.csv` by default. Files
+containing real tweets are intentionally excluded from this public release.
 
 
 

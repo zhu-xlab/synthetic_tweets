@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+outputs/
+outputs_*/
+*.log
+
+data/real_and_synthetic.csv
+
+.DS_Store
